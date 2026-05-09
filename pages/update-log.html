@@ -4,29 +4,331 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>更新履歴</title>
+  <title>更新履歴｜ホルムズ海峡危機1か月比較分析</title>
+  <meta
+    name="description"
+    content="ホルムズ海峡危機1か月比較分析サイトの更新履歴。本文、出典、判定基準、HTML/CSSの変更内容を記録。"
+  />
+
+  <!-- 下書き段階で検索避けしたい場合は下のコメントを外す -->
+  <!-- <meta name="robots" content="noindex, nofollow" /> -->
+
   <link rel="stylesheet" href="../assets/css/report.css" />
 </head>
 
 <body>
-  <main class="hormuz-report">
-    <header class="report-hero">
-      <div class="report-label">Update Log</div>
-      <h1>更新履歴</h1>
-      <p class="lead">本レポートの更新履歴です。</p>
+  <a class="skip-link" href="#main">本文へ移動</a>
 
-      <nav class="top-links">
-        <a href="../index.html">レポート本文に戻る</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-label">Hormuz Crisis Report</span>
+        <strong>更新履歴</strong>
+      </div>
+
+      <nav class="header-nav" aria-label="ページナビゲーション">
+        <a href="../index.html">本編へ戻る</a>
+        <a href="./source-notes.html">出典・脚注</a>
+        <a href="./methodology.html">判定基準</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <section class="section-block">
-      <h2 class="section-title"><span>1</span>履歴</h2>
-      <div class="card">
-        <h3>2026-05-09</h3>
-        <p>GitHub Pages公開用の初期構成を作成。</p>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Update Log</p>
+        <h1>更新履歴</h1>
+        <p>
+          本ページでは、ホルムズ海峡危機1か月比較分析サイトの主な更新内容を記録します。
+          本文、出典、判定基準、HTML/CSS、表示調整などの変更を、公開後に追跡できるようにするためのページです。
+        </p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <div class="note-box">
+          <strong>更新履歴の方針</strong>
+          <p>
+            本レポートは、危機情勢、市場価格、物流状況、政策対応が短期間で変化するテーマを扱っています。
+            そのため、公開後に本文や出典を修正・追加した場合は、このページに変更内容を記録します。
+          </p>
+          <p>
+            小さな誤字修正や表記ゆれの調整は記録しない場合がありますが、
+            分析の結論、数値、出典、判定に関わる変更は原則として記録します。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section section-muted">
+      <div class="container">
+        <div class="section-heading compact">
+          <p class="eyebrow">Current Status</p>
+          <h2>現在の公開状態</h2>
+          <p>
+            現時点では、GitHub Pages上で本編と補助ページを公開するための初期構成を整備しています。
+          </p>
+        </div>
+
+        <div class="score-grid">
+          <article class="score-card hit">
+            <span class="score-symbol">✓</span>
+            <h3>本編ページ</h3>
+            <p>
+              ダッシュボード型の比較分析ページを作成済み。
+            </p>
+          </article>
+
+          <article class="score-card hit">
+            <span class="score-symbol">✓</span>
+            <h3>出典ページ</h3>
+            <p>
+              本文で使用する主要出典の受け皿を作成済み。
+            </p>
+          </article>
+
+          <article class="score-card hit">
+            <span class="score-symbol">✓</span>
+            <h3>判定基準ページ</h3>
+            <p>
+              ◎、○、△、×、▼、▲の評価基準を整理済み。
+            </p>
+          </article>
+
+          <article class="score-card partial">
+            <span class="score-symbol">…</span>
+            <h3>完全出典化</h3>
+            <p>
+              A-1〜A-30、B-1〜B-44の完全整理は今後拡充予定。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <div class="section-heading compact">
+          <p class="eyebrow">Log</p>
+          <h2>変更履歴</h2>
+        </div>
+
+        <div class="log-list">
+          <article class="log-card">
+            <h3>2026-05-09：初期公開版の基本ページ構成を整備</h3>
+            <p>
+              GitHub Pages公開用の基本構成として、本編ページ、CSS、出典ページ、判定基準ページ、更新履歴ページを整備。
+            </p>
+            <ul>
+              <li><code>index.html</code> をダッシュボード型レポートとして作成</li>
+              <li><code>assets/css/report.css</code> を本番デザイン用CSSとして作成</li>
+              <li><code>pages/source-notes.html</code> に主要出典の受け皿を作成</li>
+              <li><code>pages/methodology.html</code> に判定基準を整理</li>
+              <li><code>pages/update-log.html</code> を作成</li>
+            </ul>
+          </article>
+
+          <article class="log-card">
+            <h3>2026-05-09：本編レポートを本番版へ差し替え</h3>
+            <p>
+              公開テスト用の簡易ページから、ホルムズ海峡危機1か月比較分析の本番レイアウトへ差し替え。
+            </p>
+            <ul>
+              <li>ヒーローコピー「停戦しても物流は戻らなかった」を設定</li>
+              <li>10秒で分かる結論カードを追加</li>
+              <li>主要指標カードを追加</li>
+              <li>4月8日予測 vs 5月8日現実の比較セクションを追加</li>
+              <li>5大ギャップ、採点サマリー、詳細比較表を追加</li>
+              <li>タイムライン、産業別ヒートマップ、今後の4シナリオを追加</li>
+              <li>出典・判定基準・更新履歴へのリンクを追加</li>
+            </ul>
+          </article>
+
+          <article class="log-card">
+            <h3>2026-05-09：本番版CSSを追加</h3>
+            <p>
+              ダッシュボード型HTMLレポートとして表示するためのCSSを整備。
+            </p>
+            <ul>
+              <li>カード型レイアウトを実装</li>
+              <li>比較カード、指標カード、ギャップカード、採点カードを実装</li>
+              <li>詳細比較表の横スクロール対応を実装</li>
+              <li>タイムライン表示を実装</li>
+              <li>産業別ヒートマップを実装</li>
+              <li>シナリオカードを実装</li>
+              <li>スマホ・タブレット向けのレスポンシブ対応を追加</li>
+              <li>印刷用スタイルを追加</li>
+            </ul>
+          </article>
+
+          <article class="log-card">
+            <h3>2026-05-09：出典ページの主要項目を追加</h3>
+            <p>
+              本編で参照している主要な出典IDに対応するアンカーを作成。
+              本文中の引用番号から該当出典へ移動できるようにした。
+            </p>
+            <ul>
+              <li>A-10、A-16、A-25、A-27を追加</li>
+              <li>B-9、B-10、B-11、B-17、B-20、B-21、B-28、B-31、B-32、B-37、B-42を追加</li>
+              <li>OFAC FAQ 1249へのリンクを追加</li>
+              <li>OFACアラートへのリンクを追加</li>
+              <li>Reuters、Rystad Energy、ナフサ価格関連リンクを追加</li>
+              <li>URL未確定項目を「確認中」として整理</li>
+            </ul>
+          </article>
+
+          <article class="log-card">
+            <h3>2026-05-09：判定基準ページを追加</h3>
+            <p>
+              4月8日時点の予測と5月8日時点の現実を比較するための評価基準を整理。
+            </p>
+            <ul>
+              <li>◎ 的中</li>
+              <li>○ 概ね的中</li>
+              <li>△ 一部外れ</li>
+              <li>× 外れ</li>
+              <li>▼ 予測より悪化</li>
+              <li>▲ 予測より軽症</li>
+            </ul>
+            <p>
+              また、方向性、時期、規模、波及経路の4軸で判定する方針を明記。
+            </p>
+          </article>
+
+          <article class="log-card">
+            <h3>2026-05-09：4月8日時点の予測評価を修正</h3>
+            <p>
+              当初は、4月8日時点の見通しを「停戦後の段階的回復を想定したやや楽観的な予測」と整理していたが、
+              4月8日時点の原文内容を踏まえ、より正確な表現へ修正。
+            </p>
+            <ul>
+              <li>
+                修正前：4月8日時点の予測は、停戦による段階的回復を中心とするやや楽観的な内容
+              </li>
+              <li>
+                修正後：4月8日時点の予測は、停戦で最悪シナリオは回避されたものの、
+                施設復旧3〜5年、ナフサ高騰、産業影響長期化を見込む慎重な内容
+              </li>
+            </ul>
+            <p>
+              そのうえで、5月8日時点の現実は、その慎重予測をさらに上回ったという構成に変更。
+            </p>
+          </article>
+
+          <article class="log-card">
+            <h3>2026-05-09：核心メッセージを明確化</h3>
+            <p>
+              レポート全体の中心メッセージとして、以下の文言を本編および判定基準ページに反映。
+            </p>
+            <blockquote>
+              政治的な停戦合意と、物理的・商業的な供給正常化は別物である。
+            </blockquote>
+            <p>
+              これにより、停戦成立そのものではなく、物流・保険・制裁・港湾運用・荷主判断が揃うかどうかを重視する構成にした。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section section-muted">
+      <div class="container">
+        <div class="section-heading compact">
+          <p class="eyebrow">Planned Updates</p>
+          <h2>今後の更新予定</h2>
+          <p>
+            次回以降、以下の項目を順次整備します。
+          </p>
+        </div>
+
+        <div class="method-grid">
+          <article class="method-card">
+            <h3>1. 出典ページの完全版化</h3>
+            <p>
+              A-1〜A-30、B-1〜B-44をすべてHTML化し、媒体名、タイトル、URL、参照内容、本文での使用箇所を整理します。
+            </p>
+          </article>
+
+          <article class="method-card">
+            <h3>2. URL未確定項目の確認</h3>
+            <p>
+              特に[B-32]帝国データバンクPDF、[B-31]石油化学生産減、[B-37]中小企業危機の正式URLを確認します。
+            </p>
+          </article>
+
+          <article class="method-card">
+            <h3>3. 本文の数値・出典リンク精査</h3>
+            <p>
+              主要指標カード、詳細比較表、タイムライン、ヒートマップ内の出典リンクを再確認し、必要に応じて追加します。
+            </p>
+          </article>
+
+          <article class="method-card">
+            <h3>4. README.mdの整備</h3>
+            <p>
+              GitHubリポジトリ用に、サイト概要、構成、公開URL、更新方法、ライセンス・注意事項をまとめます。
+            </p>
+          </article>
+
+          <article class="method-card">
+            <h3>5. OGP・SNS共有対応</h3>
+            <p>
+              必要に応じて、SNS共有時のタイトル、説明文、カード画像などを設定します。
+            </p>
+          </article>
+
+          <article class="method-card">
+            <h3>6. 表現・可読性の最終調整</h3>
+            <p>
+              長すぎる箇所の圧縮、カード文言の統一、スマホ表示の微調整を行います。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section related">
+      <div class="container">
+        <div class="section-heading compact">
+          <p class="eyebrow">Navigation</p>
+          <h2>関連ページ</h2>
+        </div>
+
+        <div class="related-grid">
+          <a class="related-card" href="../index.html">
+            <span>Main Report</span>
+            <strong>本編へ戻る</strong>
+            <p>ホルムズ海峡危機1か月比較分析のダッシュボード本編。</p>
+          </a>
+
+          <a class="related-card" href="./source-notes.html">
+            <span>Sources</span>
+            <strong>出典・脚注</strong>
+            <p>本文で使用した出典番号の対応表。</p>
+          </a>
+
+          <a class="related-card" href="./methodology.html">
+            <span>Methodology</span>
+            <strong>判定基準</strong>
+            <p>予測と現実を比較するための評価ルール。</p>
+          </a>
+        </div>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        © 2026 Hormuz Crisis Report.
+        本ページは公開情報および提供資料に基づく分析レポートです。
+      </p>
+      <p class="footer-note">
+        更新履歴は、主要な内容変更・出典追加・判定変更を中心に記録します。
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
