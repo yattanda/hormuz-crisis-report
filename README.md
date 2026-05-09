@@ -1,2 +1,26 @@
-# hormuz-crisis-report
-Hormuz Strait crisis report: oil and naphtha shortage impact analysis
+# ホルムズ海峡危機1か月比較分析
+
+## 概要
+
+このリポジトリは、  
+**「ホルムズ海峡危機：2026年4月8日 → 2026年5月8日 1か月間の変化 完全比較分析」**  
+をGitHub Pagesで公開するためのHTMLレポートです。
+
+主題は、2026年4月8日時点の予測と、2026年5月8日時点の現実を比較し、
+
+- 何が当たったのか
+- 何が外れたのか
+- 何が予測以上に悪化したのか
+- 日本の産業・家計へどのように波及したのか
+- 今後どのようなシナリオが考えられるのか
+
+を、長文レポートではなく、**ダッシュボード型HTML** として視覚的に整理することです。
+
+---
+
+## 公開ページ
+
+GitHub Pagesで公開しています。
+
+```text
+https://yattanda.github.io/hormuz-crisis-report/
