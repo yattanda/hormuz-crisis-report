@@ -4,35 +4,808 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>ホルムズ海峡危機レポート</title>
+  <title>停戦しても物流は戻らなかった：ホルムズ海峡危機1か月比較分析</title>
+  <meta
+    name="description"
+    content="ホルムズ海峡危機について、2026年4月8日時点の予測と2026年5月8日時点の現実を比較し、日本の産業・家計への影響をダッシュボード形式で整理した分析レポート。"
+  />
+
+  <!-- 下書き段階で検索避けしたい場合は下のコメントを外す -->
+  <!-- <meta name="robots" content="noindex, nofollow" /> -->
+
   <link rel="stylesheet" href="./assets/css/report.css" />
 </head>
 
 <body>
-  <main class="hormuz-report">
-    <header class="report-hero">
-      <div class="report-label">2026年4月8日 → 5月8日</div>
-      <h1>停戦しても物流は戻らなかった</h1>
-      <p class="lead">
-        ホルムズ海峡危機による石油・ナフサ不足問題の比較分析レポートです。
-      </p>
+  <a class="skip-link" href="#main">本文へ移動</a>
 
-      <nav class="top-links">
-        <a href="./pages/source-notes.html">出典・脚注</a>
-        <a href="./pages/methodology.html">調査方法</a>
-        <a href="./pages/update-log.html">更新履歴</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-label">Hormuz Crisis Report</span>
+        <strong>2026年4月8日 → 5月8日 比較分析</strong>
+      </div>
+
+      <nav class="header-nav" aria-label="ページ内ナビゲーション">
+        <a href="#summary">結論</a>
+        <a href="#comparison">予測と現実</a>
+        <a href="#timeline">タイムライン</a>
+        <a href="#industry">産業影響</a>
+        <a href="#scenarios">シナリオ</a>
+        <a href="./pages/source-notes.html">出典</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <section class="section-block">
-      <h2 class="section-title"><span>1</span>公開テスト</h2>
-      <div class="card">
-        <h3>GitHub Pages公開テスト</h3>
-        <p>
-          このページが表示されれば、GitHub Pagesの設定は成功です。
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">ホルムズ海峡危機 1か月比較分析</p>
+          <h1>停戦しても物流は戻らなかった</h1>
+          <p class="hero-lead">
+            2026年4月8日時点の予測は、停戦によって最悪シナリオを回避しつつも、
+            施設復旧・ナフサ高騰・産業影響の長期化を見込む慎重な内容だった。
+            しかし5月8日時点の現実は、その慎重予測をさらに上回った。
+          </p>
+
+          <div class="hero-message">
+            <span class="message-label">核心</span>
+            <p>
+              政治的な停戦合意と、物理的・商業的な供給正常化は別物である。
+            </p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#summary">10秒で分かる結論へ</a>
+            <a class="button secondary" href="./pages/source-notes.html">出典・脚注を見る</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="レポート概要">
+          <div class="panel-card danger">
+            <span class="panel-kicker">5月8日時点の結論</span>
+            <strong>正常化の入口に立てていない</strong>
+            <p>
+              停戦は成立したが、ホルムズ海峡の実務的な通航再開は進まず、
+              エネルギー・石化・建材・中小企業へ影響が拡大。
+            </p>
+          </div>
+
+          <dl class="meta-list">
+            <div>
+              <dt>比較対象</dt>
+              <dd>2026年4月8日予測 / 2026年5月8日現実</dd>
+            </div>
+            <div>
+              <dt>分析範囲</dt>
+              <dd>原油、ナフサ、物流、産業、家計、今後のシナリオ</dd>
+            </div>
+            <div>
+              <dt>公開形式</dt>
+              <dd>ダッシュボード型HTMLレポート</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 10秒結論 -->
+    <section id="summary" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Executive Summary</p>
+          <h2>10秒で分かる結論</h2>
+          <p>
+            4月時点の予測は楽観一辺倒ではなかった。むしろ慎重だった。
+            それでも5月時点の現実は、物流停滞・価格高止まり・産業影響の早期化という形で、想定を上回った。
+          </p>
+        </div>
+
+        <div class="summary-grid">
+          <article class="summary-card">
+            <span class="card-number">01</span>
+            <h3>最大の誤算は物流</h3>
+            <p>
+              4月時点では、停戦後にホルムズ海峡の通航が段階的に回復する前提だった。
+              しかし5月時点では、政治合意があっても実務上の通航再開が進まなかった。
+            </p>
+          </article>
+
+          <article class="summary-card">
+            <span class="card-number">02</span>
+            <h3>原油価格は下がらなかった</h3>
+            <p>
+              停戦後の価格低下は限定的で、ブレント原油は114〜126ドル台で高止まりした。
+              供給不安と物流リスクが価格を押し上げ続けた。
+              <a href="./pages/source-notes.html#source-B-20" class="cite">[B-20]</a>
+              <a href="./pages/source-notes.html#source-B-21" class="cite">[B-21]</a>
+            </p>
+          </article>
+
+          <article class="summary-card">
+            <span class="card-number">03</span>
+            <h3>ナフサ問題が産業へ波及</h3>
+            <p>
+              国産ナフサ価格は125,103円/kLまで上昇。
+              石油化学、建材、日用品、自動車、医療関連に影響が広がった。
+              <a href="./pages/source-notes.html#source-B-28" class="cite">[B-28]</a>
+            </p>
+          </article>
+
+          <article class="summary-card">
+            <span class="card-number">04</span>
+            <h3>中小企業リスクが急浮上</h3>
+            <p>
+              エネルギー価格、原材料、物流費の同時上昇により、価格転嫁力の弱い中小企業への圧力が強まった。
+              <a href="./pages/source-notes.html#source-B-32" class="cite">[B-32]</a>
+              <a href="./pages/source-notes.html#source-B-37" class="cite">[B-37]</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 指標カード -->
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading compact">
+          <p class="eyebrow">Key Indicators</p>
+          <h2>主要指標カード</h2>
+        </div>
+
+        <div class="indicator-grid">
+          <article class="indicator-card critical">
+            <span class="indicator-label">ペルシャ湾内で滞留</span>
+            <strong>約1,600隻</strong>
+            <p>
+              船舶滞留が物流正常化を阻害。
+              <a href="./pages/source-notes.html#source-B-11" class="cite">[B-11]</a>
+            </p>
+          </article>
+
+          <article class="indicator-card critical">
+            <span class="indicator-label">影響を受ける乗組員</span>
+            <strong>約23,000人</strong>
+            <p>
+              海上物流の人的リスクも拡大。
+              <a href="./pages/source-notes.html#source-B-11" class="cite">[B-11]</a>
+            </p>
+          </article>
+
+          <article class="indicator-card warning">
+            <span class="indicator-label">ブレント原油</span>
+            <strong>114〜126ドル</strong>
+            <p>
+              停戦後も高止まり。
+              <a href="./pages/source-notes.html#source-B-20" class="cite">[B-20]</a>
+              <a href="./pages/source-notes.html#source-B-21" class="cite">[B-21]</a>
+            </p>
+          </article>
+
+          <article class="indicator-card warning">
+            <span class="indicator-label">国産ナフサ価格</span>
+            <strong>125,103円/kL</strong>
+            <p>
+              石油化学・樹脂製品へ波及。
+              <a href="./pages/source-notes.html#source-B-28" class="cite">[B-28]</a>
+            </p>
+          </article>
+
+          <article class="indicator-card danger">
+            <span class="indicator-label">復旧費用見通し</span>
+            <strong>最大580億ドル</strong>
+            <p>
+              中東石油施設の復旧負担が拡大。
+              <a href="./pages/source-notes.html#source-B-17" class="cite">[B-17]</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 予測 vs 現実 -->
+    <section id="comparison" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Forecast vs Reality</p>
+          <h2>4月8日の予測 vs 5月8日の現実</h2>
+          <p>
+            4月8日時点の予測は、停戦で危機の最悪局面を避ける一方、
+            石油施設復旧やナフサ不足の長期化を見込んでいた。
+            5月8日時点で判明したのは、施設や価格だけでなく、物流そのものが想定以上に戻らなかったという点である。
+          </p>
+        </div>
+
+        <div class="compare-grid">
+          <article class="compare-card forecast">
+            <div class="compare-header">
+              <span class="date-badge">4月8日時点</span>
+              <h3>慎重予測</h3>
+            </div>
+            <ul class="check-list">
+              <li>米国・イランが2週間停戦合意</li>
+              <li>イランがホルムズ海峡通航再開を約束</li>
+              <li>石油市場正常化に3〜5か月</li>
+              <li>中東施設完全復旧に3〜5年</li>
+              <li>ナフサ価格は1,000ドル/トン前後</li>
+              <li>産業・家計影響は夏以降に本格化</li>
+              <li>完全正常化は2027年以降</li>
+            </ul>
+          </article>
+
+          <article class="compare-card reality">
+            <div class="compare-header">
+              <span class="date-badge">5月8日時点</span>
+              <h3>現実はさらに悪化</h3>
+            </div>
+            <ul class="alert-list">
+              <li>停戦後も実務的な通航再開が進まず</li>
+              <li>船舶滞留と海上保険・制裁リスクが継続</li>
+              <li>原油価格は114〜126ドル台で高止まり</li>
+              <li>復旧費用は最大580億ドル規模へ</li>
+              <li>国産ナフサ価格は125,103円/kLへ上昇</li>
+              <li>建材・石化・日用品への影響が前倒し</li>
+              <li>中小企業の資金繰り・価格転嫁リスクが急浮上</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5大ギャップ -->
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Five Gaps</p>
+          <h2>この1か月で見えた5大ギャップ</h2>
+        </div>
+
+        <div class="gap-grid">
+          <article class="gap-card">
+            <span class="gap-index">Gap 1</span>
+            <h3>停戦しても物流は戻らなかった</h3>
+            <p>
+              停戦合意は政治的リスクを下げたが、船舶の安全、保険、制裁、港湾運用の問題は残り、
+              海峡の実務的な正常化にはつながらなかった。
+            </p>
+          </article>
+
+          <article class="gap-card">
+            <span class="gap-index">Gap 2</span>
+            <h3>原油価格は下がらなかった</h3>
+            <p>
+              市場は停戦よりも、実際に原油が届くかどうかを重視した。
+              供給リスクが残る限り、価格の高止まりは解消されにくい。
+            </p>
+          </article>
+
+          <article class="gap-card">
+            <span class="gap-index">Gap 3</span>
+            <h3>迂回ルートも安全ではなかった</h3>
+            <p>
+              代替ルートの活用は一部で進んだが、輸送能力・費用・安全保障リスクの制約が大きく、
+              完全な代替にはならなかった。
+            </p>
+          </article>
+
+          <article class="gap-card">
+            <span class="gap-index">Gap 4</span>
+            <h3>影響は前倒しで出た</h3>
+            <p>
+              夏以降に本格化すると見られていた影響の一部が、5月時点で建材、石化、日用品などに現れ始めた。
+            </p>
+          </article>
+
+          <article class="gap-card">
+            <span class="gap-index">Gap 5</span>
+            <h3>中小企業リスクが急浮上</h3>
+            <p>
+              大企業よりも在庫・資金・価格転嫁力に制約のある中小企業で、コスト増の吸収余地が急速に縮小した。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 採点サマリー -->
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Scorecard</p>
+          <h2>4月8日予測の採点サマリー</h2>
+          <p>
+            4月時点の見通しは、危機の長期化やナフサ高騰を正しく捉えていた。
+            一方で、物流正常化の難しさ、価格下落の遅れ、中小企業への波及速度は過小評価していた。
+          </p>
+        </div>
+
+        <div class="score-grid">
+          <article class="score-card hit">
+            <span class="score-symbol">◎</span>
+            <h3>的中</h3>
+            <p>施設復旧・ナフサ高騰・家計負担</p>
+          </article>
+
+          <article class="score-card partial">
+            <span class="score-symbol">○/△</span>
+            <h3>一部的中</h3>
+            <p>建材・医療・自動車影響</p>
+          </article>
+
+          <article class="score-card miss">
+            <span class="score-symbol">×</span>
+            <h3>外れ</h3>
+            <p>物流正常化・原油下落・影響時期</p>
+          </article>
+
+          <article class="score-card worse">
+            <span class="score-symbol">▼</span>
+            <h3>予測より悪化</h3>
+            <p>中小企業・復旧費用・迂回ルート</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 詳細比較表 -->
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Detailed Table</p>
+          <h2>詳細比較表</h2>
+        </div>
+
+        <div class="table-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>項目</th>
+                <th>4月8日時点の予測</th>
+                <th>5月8日時点の現実</th>
+                <th>判定</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>危機全体</th>
+                <td>停戦により最悪シナリオは回避。ただし長期影響は残る。</td>
+                <td>停戦しても物流・価格・産業影響は改善せず、危機は長期化。</td>
+                <td><span class="judge worse">▼ 悪化</span></td>
+              </tr>
+              <tr>
+                <th>ホルムズ通航</th>
+                <td>イランが通航再開を約束し、段階的回復へ。</td>
+                <td>実務的な通航再開は進まず、船舶滞留が継続。</td>
+                <td><span class="judge miss">× 外れ</span></td>
+              </tr>
+              <tr>
+                <th>施設復旧</th>
+                <td>完全復旧には3〜5年を要する。</td>
+                <td>長期復旧見通しは維持。費用面ではさらに深刻化。</td>
+                <td><span class="judge hit">◎ 的中</span></td>
+              </tr>
+              <tr>
+                <th>復旧費用</th>
+                <td>大規模な復旧費用を想定。</td>
+                <td>最大580億ドル規模との見方。
+                  <a href="./pages/source-notes.html#source-B-17" class="cite">[B-17]</a>
+                </td>
+                <td><span class="judge worse">▼ 悪化</span></td>
+              </tr>
+              <tr>
+                <th>原油価格</th>
+                <td>停戦後に段階的な落ち着きを想定。</td>
+                <td>ブレント原油は114〜126ドル台で高止まり。
+                  <a href="./pages/source-notes.html#source-B-20" class="cite">[B-20]</a>
+                  <a href="./pages/source-notes.html#source-B-21" class="cite">[B-21]</a>
+                </td>
+                <td><span class="judge miss">× 外れ</span></td>
+              </tr>
+              <tr>
+                <th>ナフサ価格</th>
+                <td>1,000ドル/トン前後の高騰を想定。</td>
+                <td>国産ナフサ価格は125,103円/kLまで上昇。
+                  <a href="./pages/source-notes.html#source-B-28" class="cite">[B-28]</a>
+                </td>
+                <td><span class="judge hit">◎ 的中</span></td>
+              </tr>
+              <tr>
+                <th>石油化学</th>
+                <td>ナフサ不足により生産・採算に影響。</td>
+                <td>エチレン等の生産減が確認され、影響が顕在化。
+                  <a href="./pages/source-notes.html#source-B-31" class="cite">[B-31]</a>
+                </td>
+                <td><span class="judge hit">◎ 的中</span></td>
+              </tr>
+              <tr>
+                <th>建材・住宅</th>
+                <td>樹脂・断熱材・建材価格へ波及。</td>
+                <td>影響は想定より早く表面化。</td>
+                <td><span class="judge partial">○/△ 一部的中</span></td>
+              </tr>
+              <tr>
+                <th>自動車</th>
+                <td>樹脂部材、塗料、物流費を通じた影響。</td>
+                <td>直接停止よりもコスト上昇・部材調達面で圧力。</td>
+                <td><span class="judge partial">○ 一部的中</span></td>
+              </tr>
+              <tr>
+                <th>日用品</th>
+                <td>包装材・樹脂製品に遅れて波及。</td>
+                <td>価格転嫁や値上げ圧力が前倒しで発生。</td>
+                <td><span class="judge worse">▼ 悪化</span></td>
+              </tr>
+              <tr>
+                <th>医療</th>
+                <td>4月半ば〜8月が最大リスク。</td>
+                <td>医療用樹脂・消耗品・物流面で引き続き要警戒。</td>
+                <td><span class="judge partial">○/△ 一部的中</span></td>
+              </tr>
+              <tr>
+                <th>中小企業</th>
+                <td>コスト増の波及は想定。</td>
+                <td>価格転嫁困難、資金繰り、倒産リスクが急浮上。
+                  <a href="./pages/source-notes.html#source-B-32" class="cite">[B-32]</a>
+                  <a href="./pages/source-notes.html#source-B-37" class="cite">[B-37]</a>
+                </td>
+                <td><span class="judge worse">▼ 悪化</span></td>
+              </tr>
+              <tr>
+                <th>家計負担</th>
+                <td>燃料・電気・ガス・日用品価格に影響。</td>
+                <td>補助金政策を含めた家計負担対策が重要化。
+                  <a href="./pages/source-notes.html#source-B-42" class="cite">[B-42]</a>
+                </td>
+                <td><span class="judge hit">◎ 的中</span></td>
+              </tr>
+              <tr>
+                <th>今後の基本シナリオ</th>
+                <td>2027年以降まで完全正常化は困難。</td>
+                <td>長期膠着が最有力。正常化には政治合意だけでなく物流・保険・制裁の解消が必要。</td>
+                <td><span class="judge hit">◎ 的中</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="table-note">
+          判定基準の詳細は
+          <a href="./pages/methodology.html">判定方法ページ</a>
+          を参照。
         </p>
       </div>
     </section>
+
+    <!-- タイムライン -->
+    <section id="timeline" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Timeline</p>
+          <h2>1か月の主要タイムライン</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <time datetime="2026-04-08">4月8日</time>
+            <div>
+              <h3>停戦後の段階的回復を想定</h3>
+              <p>
+                4月時点では、停戦合意により最悪シナリオを回避しつつ、
+                石油市場は3〜5か月で正常化へ向かうとの見通しが置かれた。
+                <a href="./pages/source-notes.html#source-A-10" class="cite">[A-10]</a>
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <time datetime="2026-04-12">4月12日</time>
+            <div>
+              <h3>米海軍がイラン港湾への海上封鎖を開始</h3>
+              <p>
+                停戦後も軍事・海上安全保障リスクが残り、商船の通航判断を難しくした。
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <time datetime="2026-04-28">4月28日</time>
+            <div>
+              <h3>OFACが通航許可料支払いに制裁リスク警告</h3>
+              <p>
+                通航に関連する支払いが制裁対象となり得るとの警告により、企業・船主・保険会社の判断がさらに慎重化。
+                <a href="./pages/source-notes.html#source-B-9" class="cite">[B-9]</a>
+                <a href="./pages/source-notes.html#source-B-10" class="cite">[B-10]</a>
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <time datetime="2026-05-03">5月3〜4日</time>
+            <div>
+              <h3>ホルムズ海峡内で発砲、フジャイラも攻撃</h3>
+              <p>
+                停戦下でも局地的な安全保障リスクが残り、海上輸送の信認回復を妨げた。
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <time datetime="2026-05-05">5月5日</time>
+            <div>
+              <h3>Project Freedomが一時停止</h3>
+              <p>
+                通航再開に向けた枠組みが停滞し、物流正常化の遅れが明確になった。
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <time datetime="2026-05-06">5月6〜7日</time>
+            <div>
+              <h3>14項目MOUが浮上</h3>
+              <p>
+                協議継続の材料は出たが、商業輸送を即時に回復させるほどの信頼回復には至らなかった。
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item highlight">
+            <time datetime="2026-05-08">5月8日</time>
+            <div>
+              <h3>政治と物流の時間軸が分離</h3>
+              <p>
+                停戦合意はあっても、船舶、保険、制裁、港湾、荷主の判断が揃わなければ供給は戻らない。
+                この1か月で、その構造が明確になった。
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 産業別ヒートマップ -->
+    <section id="industry" class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Industry Heatmap</p>
+          <h2>産業別影響ヒートマップ</h2>
+          <p>
+            ナフサ高騰、物流費上昇、原油価格高止まりは、川上の石油化学だけでなく、
+            建材、日用品、医療、中小企業へ段階的に波及している。
+          </p>
+        </div>
+
+        <div class="heatmap-grid">
+          <article class="heat-card severe">
+            <div class="heat-header">
+              <h3>石油化学産業</h3>
+              <span>重症</span>
+            </div>
+            <p>
+              ナフサ高騰と供給不安が直撃。エチレン等の生産減が確認され、採算と稼働率に圧力。
+              <a href="./pages/source-notes.html#source-B-31" class="cite">[B-31]</a>
+            </p>
+          </article>
+
+          <article class="heat-card severe">
+            <div class="heat-header">
+              <h3>建材・住宅産業</h3>
+              <span>重症</span>
+            </div>
+            <p>
+              樹脂、断熱材、塗料、接着剤、輸送費の上昇が住宅コストへ波及。
+              影響の出方は想定より早い。
+            </p>
+          </article>
+
+          <article class="heat-card medium">
+            <div class="heat-header">
+              <h3>自動車産業</h3>
+              <span>中程度</span>
+            </div>
+            <p>
+              樹脂部材、ゴム、塗料、物流費を通じたコスト増。
+              直接的な操業停止より、サプライチェーン負担が中心。
+            </p>
+          </article>
+
+          <article class="heat-card warning">
+            <div class="heat-header">
+              <h3>日用品・消費財</h3>
+              <span>前倒し</span>
+            </div>
+            <p>
+              包装材、プラスチック容器、洗剤・衛生用品などに値上げ圧力。
+              家計への波及が早まる可能性。
+            </p>
+          </article>
+
+          <article class="heat-card alert">
+            <div class="heat-header">
+              <h3>医療分野</h3>
+              <span>要警戒</span>
+            </div>
+            <p>
+              医療用樹脂、チューブ、手袋、包装材など、石化由来製品の供給・価格に注意。
+              4月時点でもリスク期間として指摘されていた。
+              <a href="./pages/source-notes.html#source-A-27" class="cite">[A-27]</a>
+            </p>
+          </article>
+
+          <article class="heat-card severe">
+            <div class="heat-header">
+              <h3>中小企業</h3>
+              <span>急速悪化</span>
+            </div>
+            <p>
+              原材料、電力、燃料、物流費が同時に上昇。
+              価格転嫁力の弱い企業では資金繰りリスクが高まる。
+              <a href="./pages/source-notes.html#source-B-32" class="cite">[B-32]</a>
+              <a href="./pages/source-notes.html#source-B-37" class="cite">[B-37]</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- シナリオ -->
+    <section id="scenarios" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Forward Scenarios</p>
+          <h2>今後の4シナリオ</h2>
+          <p>
+            今後を分けるのは、停戦文書そのものではなく、商船が通れるか、保険が付くか、制裁リスクが解消されるか、
+            そして港湾・施設が実際に動くかである。
+          </p>
+        </div>
+
+        <div class="scenario-grid">
+          <article class="scenario-card">
+            <div class="scenario-top">
+              <span class="scenario-label">Scenario A</span>
+              <span class="probability">25%</span>
+            </div>
+            <h3>MOU成立・段階的正常化</h3>
+            <p>
+              14項目MOUが成立し、通航・保険・制裁リスクが順次緩和。
+              原油価格は段階的に低下し、物流も限定的に回復。
+            </p>
+            <ul>
+              <li>通航再開は段階的</li>
+              <li>価格低下には時間差</li>
+              <li>産業影響は残るがピークアウト</li>
+            </ul>
+          </article>
+
+          <article class="scenario-card most-likely">
+            <div class="scenario-top">
+              <span class="scenario-label">Scenario B</span>
+              <span class="probability">45%</span>
+            </div>
+            <h3>長期膠着の継続</h3>
+            <p>
+              停戦は維持されるが、通航・保険・制裁・港湾運用の問題が残り、
+              物流と価格の正常化が進まない。現時点の最有力シナリオ。
+            </p>
+            <ul>
+              <li>原油・ナフサ価格が高止まり</li>
+              <li>中小企業の負担が増大</li>
+              <li>家計支援策の重要性が上昇</li>
+            </ul>
+            <span class="tag">最有力</span>
+          </article>
+
+          <article class="scenario-card">
+            <div class="scenario-top">
+              <span class="scenario-label">Scenario C</span>
+              <span class="probability">15%</span>
+            </div>
+            <h3>交渉決裂・全面戦争再燃</h3>
+            <p>
+              局地衝突や交渉決裂により危機が再燃。
+              原油価格の再急騰、物流停止、物資不足の深刻化が起きる。
+            </p>
+            <ul>
+              <li>原油価格の急騰</li>
+              <li>重要物資の供給制約</li>
+              <li>政府介入・備蓄放出の可能性</li>
+            </ul>
+          </article>
+
+          <article class="scenario-card">
+            <div class="scenario-top">
+              <span class="scenario-label">Scenario D</span>
+              <span class="probability">15%</span>
+            </div>
+            <h3>部分的合意・不完全緩和</h3>
+            <p>
+              一部通航や限定的な制裁緩和は進むが、完全正常化には至らない。
+              価格は下がるが、危機前水準には戻りにくい。
+            </p>
+            <ul>
+              <li>優先貨物から通航再開</li>
+              <li>保険料・物流費は高止まり</li>
+              <li>産業影響は長期化</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 総括 -->
+    <section class="section section-conclusion">
+      <div class="container">
+        <div class="conclusion-card">
+          <p class="eyebrow">Conclusion</p>
+          <h2>総括：停戦は「危機の終わり」ではなく「別の危機の始まり」だった</h2>
+          <p>
+            4月8日時点の予測は、停戦によって最悪の軍事シナリオを回避しつつも、
+            施設復旧、ナフサ不足、産業影響、家計負担の長期化を見込む慎重な分析だった。
+            その点で、危機の方向性はかなり正確に捉えていた。
+          </p>
+          <p>
+            しかし、5月8日時点の現実はさらに厳しい。
+            最大の誤算は、政治的な停戦合意が、ホルムズ海峡の実務的な通航再開に直結しなかったことである。
+            船舶、保険、制裁、港湾、荷主の判断が揃わなければ、供給網は動かない。
+          </p>
+          <p>
+            日本にとって重要なのは、原油価格だけではない。
+            ナフサを起点とする石油化学、建材、日用品、医療材料、そして中小企業の資金繰りまで、
+            影響は広く、かつ前倒しで現れ始めている。
+          </p>
+
+          <div class="conclusion-highlight">
+            <strong>この1か月で明らかになったこと</strong>
+            <span>停戦合意だけでは、物流も価格も産業も正常化しない。</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 関連ページ -->
+    <section class="section related">
+      <div class="container">
+        <div class="section-heading compact">
+          <p class="eyebrow">Appendix</p>
+          <h2>関連ページ</h2>
+        </div>
+
+        <div class="related-grid">
+          <a class="related-card" href="./pages/source-notes.html">
+            <span>Sources</span>
+            <strong>出典・脚注</strong>
+            <p>A-1〜A-30、B-1〜B-44の出典整理ページ。</p>
+          </a>
+
+          <a class="related-card" href="./pages/methodology.html">
+            <span>Methodology</span>
+            <strong>判定基準</strong>
+            <p>◎、○、△、×、▼、▲の評価基準。</p>
+          </a>
+
+          <a class="related-card" href="./pages/update-log.html">
+            <span>Update Log</span>
+            <strong>更新履歴</strong>
+            <p>公開後の修正・追記内容を記録。</p>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        © 2026 Hormuz Crisis Report.
+        本ページは公開情報および提供資料に基づく分析レポートです。
+      </p>
+      <p class="footer-note">
+        注：一部出典には、有料記事、会員限定記事、速報記事、二次引用を含む可能性があります。
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
