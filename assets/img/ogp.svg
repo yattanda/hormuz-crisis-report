@@ -107,24 +107,24 @@
   ホルムズ海峡危機、1か月で見えた
 </text>
 
-<text x="74" y="397" class="subtitle" fill="#FECACA">
+<text x="74" y="392" class="subtitle" fill="#FECACA">
   供給正常化の壁
 </text>
 
-<text x="74" y="434" class="body" fill="#DBEAFE">
+<text x="74" y="419" class="body" fill="#DBEAFE">
   2026年4月8日の予測 vs 5月8日の現実
 </text>
   </g>
 
   <!-- Core message card -->
-  <g filter="url(#shadow)">
-    <rect x="70" y="448" width="690" height="104" rx="24" fill="#0F172A" fill-opacity="0.72" stroke="#60A5FA" stroke-opacity="0.35"/>
-    <rect x="70" y="448" width="8" height="104" rx="4" fill="#60A5FA"/>
-    <text x="104" y="492" class="sans small" fill="#93C5FD">核心</text>
-    <text x="104" y="531" class="sans body" fill="#FFFFFF">
-    政治合意と供給正常化は別物である
-    </text>
-  </g>
+<g filter="url(#shadow)">
+  <rect x="70" y="430" width="690" height="100" rx="24" fill="#0F172A" fill-opacity="0.72" stroke="#60A5FA" stroke-opacity="0.35"/>
+  <rect x="70" y="430" width="8" height="100" rx="4" fill="#60A5FA"/>
+  <text x="104" y="471" class="sans small" fill="#93C5FD">核心</text>
+  <text x="104" y="510" class="sans body" fill="#FFFFFF">
+    政治合意と供給正常化は別物である。
+  </text>
+</g>
 
   <!-- Right panel -->
   <g filter="url(#shadow)">
