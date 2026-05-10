@@ -301,6 +301,14 @@ ol {
   margin-bottom: 22px;
   text-wrap: balance;
 }
+.hero-subtitle {
+  margin: -4px 0 22px;
+  color: #fecaca;
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  font-weight: 850;
+  line-height: 1.55;
+  letter-spacing: -0.02em;
+}
 
 .hero-lead {
   max-width: 780px;
